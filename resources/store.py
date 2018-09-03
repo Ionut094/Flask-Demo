@@ -32,4 +32,4 @@ class StoreResource(Resource):
 
 class StoreList(Resource):
     def get(self):
-        return [store.json() for store in Store.query.all()]
+        return [store.json() for store in Store.find_all()]
